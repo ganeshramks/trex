@@ -3,6 +3,8 @@
 
 A modern, modular boilerplate to kickstart game development using [Phaser 3](https://phaser.io/phaser3) and Webpack 4. This setup supports live reloading during development, optimized production builds, ES6+ transpilation via Babel, and convenient deployment workflows.
 
+The game can be accessed here: https://ganeshramks.github.io/trex/
+
 ---
 
 ## 🚀 Features
