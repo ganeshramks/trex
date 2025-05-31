@@ -29,3 +29,13 @@ Check versions:
 ```bash
 node -v
 npm -v
+
+
+🎮 Game Loop Overview
+Phaser uses a classic game loop pattern with the following lifecycle methods:
+
+preload(): Load all assets before the game starts.
+
+create(): Initialize game objects, input handlers, and animations.
+
+update(time, delta): Runs 60 times per second to update game logic (e.g., movement, collision, score tracking).
