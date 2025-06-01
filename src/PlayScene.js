@@ -14,6 +14,7 @@ class PlayScene extends Phaser.Scene {
     this.score = 0;
 
     this.loadSounds();
+    this.welcomeSound.play();
     this.createGround(height);
     this.createDino(height);
     this.createScoreUI(width);
@@ -32,7 +33,8 @@ class PlayScene extends Phaser.Scene {
     this.jumpSound = this.sound.add('jump', { volume: 0.8 });
     this.hitSound = this.sound.add('hit', { volume: 0.8 });
     this.reachSound = this.sound.add('reach', { volume: 0.8 });
-    this.trexRoarSound = this.sound.add('trex-roar', {volume: 1.0})
+    this.trexRoarSound = this.sound.add('trex-roar', {volume: 1.0});
+    this.welcomeSound = this.sound.add('welcome-to-jurassic-park', {volume:1.0});
   }
 
   createGround(height) {

@@ -11,6 +11,7 @@ class PreloadScene extends Phaser.Scene {
     this.load.audio('hit', 'assets/hit.m4a');
     this.load.audio('reach', 'assets/reach.m4a');
     this.load.audio('trex-roar', 'assets/trex_roar.m4a');
+    this.load.audio('welcome-to-jurassic-park', 'assets/welcome_to_jurassic_park.mp3');
 
     this.load.image('ground', 'assets/ground.png');
     this.load.image('dino-idle', 'assets/dino-idle.png');
