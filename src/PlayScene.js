@@ -32,6 +32,7 @@ class PlayScene extends Phaser.Scene {
     this.jumpSound = this.sound.add('jump', { volume: 0.8 });
     this.hitSound = this.sound.add('hit', { volume: 0.8 });
     this.reachSound = this.sound.add('reach', { volume: 0.8 });
+    this.trexRoarSound = this.sound.add('trex-roar', {volume: 1.0})
   }
 
   createGround(height) {
@@ -48,7 +49,9 @@ class PlayScene extends Phaser.Scene {
       .setGravityY(5000)
       .setOrigin(0, 1)
       .setBodySize(44, 92)
-      .setDepth(1);
+      .setDepth(1)
+      // .setTint(0x00FF00);
+      // .setTintFill(0x0B6623);
   }
 
   createScoreUI(width) {
@@ -152,6 +155,10 @@ class PlayScene extends Phaser.Scene {
             alpha: 0,
             yoyo: true
           });
+        }
+
+        if (this.score % 500 === 0) {
+          this.trexRoarSound.play();
         }
 
         const paddedScore = String(this.score).padStart(5, '0');

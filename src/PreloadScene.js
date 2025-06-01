@@ -1,4 +1,3 @@
-
 import Phaser from 'phaser';
 
 class PreloadScene extends Phaser.Scene {
@@ -11,6 +10,7 @@ class PreloadScene extends Phaser.Scene {
     this.load.audio('jump', 'assets/jump.m4a');
     this.load.audio('hit', 'assets/hit.m4a');
     this.load.audio('reach', 'assets/reach.m4a');
+    this.load.audio('trex-roar', 'assets/trex_roar.m4a');
 
     this.load.image('ground', 'assets/ground.png');
     this.load.image('dino-idle', 'assets/dino-idle.png');
